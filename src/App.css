@@ -3,9 +3,13 @@
   display: flex;
   align-content: center;
 }
+
+
 .toc{
   margin-left: 0.1vw;
 }
+
+
 @media screen and (min-width: 600px) {
   
  .film{
@@ -15,9 +19,9 @@
   font-size:2vw; 
   border-color: black;
   border-style: solid;
+}}
 
-}
-}
+
 @media screen and (max-width: 600px) {
   
  .film{
@@ -27,15 +31,13 @@
   font-size:4.5vw; 
   border-color: black;
   border-style: solid;
-}
-}
+}}
 
 
 .film:hover{
   background-color: #d8f7ba;
   cursor: pointer
 }
-
 
 .ChosenFilm{
   background-color: #b5a188;
@@ -44,21 +46,33 @@
   border-color: black;
   border-style: solid;
 }
+
+
 @media screen and (min-width: 600px) {
 .details{
   border-color: black;
   border-style: solid;
   border-width: 1px 1px;
   font-size:1.5vw; 
+}}
 
-}
-}
+
 @media screen and (max-width: 600px) {
 .details{
   border-color: black;
   border-style: solid;
   border-width: 1px 1px;
 font-size:3.5vw; 
+}}
 
-}
-}
+
+@media screen and (min-width: 600px) {
+.favorite{
+  font-size:1.5vw; 
+}}
+
+
+@media screen and (max-width: 600px) {
+.favorite{
+ font-size:3.5vw; 
+}}

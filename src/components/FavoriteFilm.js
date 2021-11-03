@@ -6,6 +6,7 @@ import { faTrashAlt } from "@fortawesome/free-regular-svg-icons";
 class FavoriteFilm extends Component {
 
     removeFromFavorite = () => {
+
         this.props.removeFromFavorite(this.props.film)
     }
 
@@ -13,7 +14,7 @@ class FavoriteFilm extends Component {
     render() {
         return (
             <div className="favorite">
-             {<li>{this.props.film} <FontAwesomeIcon onClick={this.removeFromFavorite} icon={faTrashAlt} /> </li>}
+                {<li>{this.props.film} <FontAwesomeIcon onClick={this.removeFromFavorite} icon={faTrashAlt} /> </li>}
             </div>
         )
 
