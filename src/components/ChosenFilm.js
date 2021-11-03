@@ -34,7 +34,7 @@ class ChosenFilm extends Component {
           <li>{characterName}</li>
         })}
         </div> */}
-       <div className="favorite" >Favorite films {this.props.favoriteFilms.map(film=> <FavoriteFilm removeFromFavorite={this.props.removeFromFavorite} favoriteFilms={this.props.favoriteFilms}film={film} addToFavorite={this.props.addToFavorite} /> )}
+       <div className="favorite" >Favorite films {this.props.favoriteFilms.map(film=> <FavoriteFilm key={film} removeFromFavorite={this.props.removeFromFavorite} favoriteFilms={this.props.favoriteFilms}film={film} addToFavorite={this.props.addToFavorite} /> )}
        </div>
 
       </div>

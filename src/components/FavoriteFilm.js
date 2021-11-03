@@ -14,7 +14,7 @@ class FavoriteFilm extends Component {
     render() {
         return (
             <div className="favorite">
-                {<li>{this.props.film} <FontAwesomeIcon onClick={this.removeFromFavorite} icon={faTrashAlt} /> </li>}
+                {this.props.film!==""?<li>{this.props.film} <FontAwesomeIcon onClick={this.removeFromFavorite} icon={faTrashAlt} /> </li>:null}
             </div>
         )
 
