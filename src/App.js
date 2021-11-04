@@ -79,6 +79,8 @@ class StarUI extends Component {
     return (
       <div className="container">
         <div className="toc">
+        <h1 className="filmListHeader" >Star War Films(TOC) </h1>
+
           {this.state.films.map(film => {
             return (
               <Film  favoriteFilms={this.state.favoriteFilms} addToFavorite={this.addToFavorite} displayChosenFilm={this.displayChosenFilm} key={film.title} filmDetails={film} />

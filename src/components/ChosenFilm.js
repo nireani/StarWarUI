@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import FavoriteFilm from './FavoriteFilm';
 
-// const axios = require('axios')
 
 
 class ChosenFilm extends Component {
@@ -24,6 +23,7 @@ class ChosenFilm extends Component {
 
       <div className="ChosenFilm">
 
+        <h1 className="filmDetailsHeader" >Film Details</h1>
         <div className="details" >Title - {this.props.chosenFilm.title}</div>
         <div className="details" >Release date - {this.props.chosenFilm.release_date}</div>
         <div className="details" >Director - {this.props.chosenFilm.director}</div>
@@ -34,7 +34,12 @@ class ChosenFilm extends Component {
           <li>{characterName}</li>
         })}
         </div> */}
-       <div className="favorite" >Favorite films {this.props.favoriteFilms.map(film=> <FavoriteFilm key={film} removeFromFavorite={this.props.removeFromFavorite} favoriteFilms={this.props.favoriteFilms}film={film} addToFavorite={this.props.addToFavorite} /> )}
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+       <div className="favorite" >My Favorite films {this.props.favoriteFilms.map(film=> <FavoriteFilm key={film} removeFromFavorite={this.props.removeFromFavorite} favoriteFilms={this.props.favoriteFilms}film={film} addToFavorite={this.props.addToFavorite} /> )}
        </div>
 
       </div>
