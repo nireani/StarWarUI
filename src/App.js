@@ -26,7 +26,7 @@ class StarUI extends Component {
   componentDidMount = async () => {
     let films = await axios.get('https://swapi.dev/api/films')
     this.setState({ films: films.data.results })
-    let localStorageFavoriteList =localStorage.favoriteList.split(',')
+    let localStorageFavoriteList =localStorage.favoriteList?localStorage.favoriteList.split(','):[]
     this.setState({ favoriteFilms:localStorageFavoriteList})
   }
 
